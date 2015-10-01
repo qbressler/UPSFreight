@@ -28,17 +28,17 @@ namespace UPSFreight
             #region Payment
             // Calculate Payment
             AddressType payerAddress = new AddressType();
-            string[] addressLine =  { "9074 Wall ST NW"};
+            string[] addressLine =  { "123 Main ST NE"};
             payerAddress.AddressLine = addressLine;
-            payerAddress.City = "Massillon";
+            payerAddress.City = "City";
             payerAddress.CountryCode = "+1";
-            payerAddress.PostalCode = "44646";
-            payerAddress.StateProvinceCode = "OH";
-            payerAddress.Town = "Massillon";
+            payerAddress.PostalCode = "11111";
+            payerAddress.StateProvinceCode = "FL";
+            payerAddress.Town = "Town";
 
             PayerType payer = new PayerType();
-            payer.AttentionName = "John Bressler";
-            payer.Name = "John Bressler";
+            payer.AttentionName = "ATTN Namer";
+            payer.Name = "Payer Name";
             payer.ShipperNumber = "99";
             FreightRateResponse paymentResponse = calculator.CalculatePaymentInfo(payerAddress, payer, "9", "Some Description");
             #endregion
