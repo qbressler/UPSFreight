@@ -13,16 +13,16 @@ namespace UPSFreight
         static void Main(string[] args)
         {
             RateCalculator calculator = new RateCalculator();
-            string[] addressLine1 = { "9074 WALL ST NW"};
+            string[] addressLine1 = { "Some Address"};
 
             #region ship from
             FreightRateResponse shipFromResponse = calculator.CalculateShipFrom(addressLine1, 
-                "Massillon", 
+                "City", 
                 "OH", 
-                "44646", 
+                "Zip", 
                 "+1", 
-                "Quintin Bressler", 
-                "John Bressler");
+                "Name1", 
+                "Name2");
             #endregion
 
             #region Payment
