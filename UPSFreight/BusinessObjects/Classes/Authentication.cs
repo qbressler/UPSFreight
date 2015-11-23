@@ -32,8 +32,8 @@ namespace UPSFreight.BusinessObjects.Classes
         private UPSSecurityUsernameToken SecureToken(string username, string password)
         {
             UPSSecurityUsernameToken upsSecUsrnameToken = new UPSSecurityUsernameToken();
-            upsSecUsrnameToken.Username = "ahrepair";
-            upsSecUsrnameToken.Password = "Technician13";
+            upsSecUsrnameToken.Username = "user";
+            upsSecUsrnameToken.Password = "password";
             return upsSecUsrnameToken;
         }
         #endregion
